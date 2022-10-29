@@ -1,0 +1,125 @@
+
+    // test
+    <p></p>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+</head>
+ <body>
+
+    <div class="infoDiv">
+            <div class="infoma">
+                <div>에스디 컬렉션 에서 결제를 요청합니다</div>
+                <!--<div style="align-self: flex-end;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-share-nodes fa-lg"></i></div>-->
+            </div>
+<p></p>
+<form action="/my-handling-form-page" method="post">
+            <div class="infoj">
+                <div>
+                    <label class="mylabel">고객명</label>
+                    <div class="my-form-group">
+                        <input type="text" name="CUSTOMER_NAME" placeholder="고객명">
+                    </div>
+                    <p></p>
+                </div>
+                <div class="m-35">
+                    <label class="mylabel">전화번호</label>
+                    <div class="my-form-group">
+                        <input type="text" name="CUSTOMER_TEL" class="phone-number-check" placeholder="전화번호">
+                    </div>
+                    <p></p>
+                </div>
+                <div class="m-35">
+                    <label class="mylabel">결제금액</label>
+                    <div class="my-form-group">
+                        <input type="number" numberonly="" name="AMT" value="">
+                    </div>
+                    <p></p>
+                </div>
+                <div class="m-35">
+                    <label class="mylabel">카드선택</label>
+                    <div class="my-form-group">
+                        
+<select name="카드선택">
+    <option value="">카드선택</option>
+    <option value="sh">신한카드</option>
+    <option value="bc">BC카드</option>
+    <option value="kb">KB국민카드</option>
+    <option value="hn">하나카드</option>
+    <option value="ss">삼성카드</option>
+    <option value="hd">현대카드</option>
+    <option value="rt">롯데카드</option>
+    <option value="ur">우리카드</option>
+    <option value="nh">NH농협카드</option>
+    <option value="ct">씨티카드</option>
+    <option value="sh">수협카드</option>
+    <option value="gwj">광주은행 카드</option>
+    <option value="jbk">전북은행 카드</option>
+    <option value="jju">제주은행 카드</option>
+</select>
+            
+                    </div>
+                    <p></p>
+                </div>
+                <div class="m-35">
+                    <label class="mylabel">카드번호</label>
+                    <div class="my-form-group myflex">
+                        <div><input type="number" numberonly="" name="card_no1" id="card_no1" value=""></div>
+                        <div><input type="number" numberonly="" name="card_no2" id="card_no2" value=""></div>
+                        <div><input type="number" numberonly="" name="card_no3" id="card_no3" value=""></div>
+                        <div><input type="number" numberonly="" name="card_no4" id="card_no4" value=""></div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="m-35">
+                    <label class="mylabel">유효기간</label>
+                    <div class="my-form-group myflex">
+                        <div>
+                            <select name="ex_y" onclick="exp(this.value)">
+                                <option value="">년 선택</option>
+                                                                    <option value="2022">2022</option>
+                                                                    <option value="2023">2023</option>
+                                                                    <option value="2024">2024</option>
+                                                                    <option value="2025">2025</option>
+                                                                    <option value="2026">2026</option>
+                                                                    <option value="2027">2027</option>
+                                                                    <option value="2028">2028</option>
+                                                                    <option value="2029">2029</option>
+                                                            </select>
+                        </div>
+                        <div>
+                            <select name="ex_m" onclick="exp(this.value)">
+                                <option value="">월 선택</option>
+                                                                    <option value="01">01</option>
+                                                                    <option value="02">02</option>
+                                                                    <option value="03">03</option>
+                                                                    <option value="04">04</option>
+                                                                    <option value="05">05</option>
+                                                                    <option value="06">06</option>
+                                                                    <option value="07">07</option>
+                                                                    <option value="08">08</option>
+                                                                    <option value="09">09</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                            </select>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                                    <div class="m-35">
+                        <label class="mylabel">생년월일</label>
+                        <div class="my-form-group">
+                            <input type="number" name="CARD_AUTH" placeholder="ex ) 880101">
+                        </div>
+                    </div>
+                
+            </div>
+            <p></p>
+            <p></p>
+        </div>
+                    <div class="m-35 d-grid gap-2">
+                        <button type="submit">결제하기</button>
+                    </div>
+                    </form>
+                </body>
